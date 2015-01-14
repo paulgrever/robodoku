@@ -1,4 +1,5 @@
-require './lib/spot'
+# require './lib/spot'
+require './spot'
 
 class Board
 
