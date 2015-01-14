@@ -1,5 +1,5 @@
  #require './lib/set_up' #for test
- require './board' #for running
+ require './lib/board' #for running
 
 class Solver
 

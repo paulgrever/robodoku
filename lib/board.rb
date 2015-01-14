@@ -1,4 +1,4 @@
-require './spot'
+require './lib/spot'
 
 class Board
 
@@ -16,7 +16,7 @@ class Board
 			end
 			unsolved_spots = @spots.select {|spot| spot.value.zero?}
 		end
-		# puts formatted_board
+		 puts formatted_board
 
 	end
 
@@ -34,6 +34,6 @@ private
 
 	def formatted_board
 		#todo take spots, figure out how to p
-
+		@spots
 	end
 end
