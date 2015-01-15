@@ -1,12 +1,12 @@
- require './board' #for running
- # require './lib/board' 
+ # require './board' #for running
+ require './lib/board'  #for testing using rake
 
 class Solver
 
-	def solve(puzzle)
-		@board = Board.new(puzzle)
-		@board.solution
-	end
+  def solve(puzzle)
+    @board = Board.new(puzzle)
+    @board.solution
+  end
 end
 
 

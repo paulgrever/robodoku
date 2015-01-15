@@ -1,6 +1,7 @@
 require './lib/solver'
 require 'minitest/autorun'
 require 'minitest/pride'
+require 'pry'
 
 class SolverTest < Minitest::Test
   attr_reader :solver
@@ -13,17 +14,21 @@ class SolverTest < Minitest::Test
   	assert Solver
   end
 
-  def test_it_sets_the_game_up
-  	puzzle = "8 659\n7156"
-  	results = solver.start_game(puzzle)
-    assert_equal [[8, 0, 6, 5, 9], [7, 1, 5, 6]], results
+  def test_it_solves_a_puzzle_with_a_single_element
+    
+    single_puzzle = "8 6594317
+715638942
+39472165
+163459278
+948267153
+257813694
+531942786
+482176539
+679385421"
+    results = solver.solve(single_puzzle)
+    assert_equal 81, results.length
   end
 
-  def test_it_knows_it_if_the_board_is_completed
-  	puzzle = "8 659\n7156"
-  	game = solver.start_game(puzzle)
-  	results = game.it_is_solved?
-  	assert_equal false, results
-  end
+
 
 end

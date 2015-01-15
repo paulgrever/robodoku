@@ -6,12 +6,9 @@ require './lib/board'
 class BoardTest < Minitest::Test
   attr_reader :board
 
-  def setup
-  	@board = Board.new
-  end
-
   def test_it_exists
-  	assert Board
+  	skip
+  	assert Board("p")
   end
 
 
