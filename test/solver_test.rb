@@ -7,11 +7,11 @@ class SolverTest < Minitest::Test
   attr_reader :solver
 
   def setup
-  	@solver = Solver.new
+    @solver = Solver.new
   end
 
   def test_it_exists
-  	assert Solver
+    assert Solver
   end
 
   def test_it_solves_a_puzzle_with_a_single_element

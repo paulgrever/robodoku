@@ -2,6 +2,7 @@
 # require './spot' #for running in file
 
 class Board
+  attr_reader :spots
 
   def initialize(puzzle)
     @spots = init_spots(puzzle)
