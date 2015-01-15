@@ -1,5 +1,5 @@
  require './lib/spot' #for testing using rake
-#require './spot' #for running in file
+# require './spot' #for running in file
 
 class Board
 
